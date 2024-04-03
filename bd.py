@@ -2,10 +2,10 @@ from mysql.connector import connect, Error
 
 try:
     with connect(
-        host="172.16.2.10",
-        user='bot',
-        password='password',
-        database="glpi",
+        host="****",
+        user='***',
+        password='***',
+        database="*****",
     ) as connection:
         select_glpi_tickets_query = "SELECT name, date, content, users_id_recipient FROM glpi_tickets LIMIT 4"
         with connection.cursor() as cursor:
