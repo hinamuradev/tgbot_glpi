@@ -1,7 +1,7 @@
 import mysql.connector
 
 # Create the connection object
-myconn = mysql.connector.connect(host="172.16.2.10", user="bot", passwd="password", database="glpi")
+myconn = mysql.connector.connect(host=ID_HOST, user=ID_NAME, passwd=ID_PASS, database=DB)
 
 # creating the cursor object
 bot = myconn.cursor()
